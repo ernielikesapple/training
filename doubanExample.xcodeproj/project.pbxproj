@@ -15,6 +15,8 @@
 		6D1E62642192C8A8006F468A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D1E62632192C8A8006F468A /* Assets.xcassets */; };
 		6D1E62672192C8A8006F468A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D1E62652192C8A8006F468A /* LaunchScreen.storyboard */; };
 		6D1E627D2192D89D006F468A /* FetchBookService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1E627C2192D89D006F468A /* FetchBookService.swift */; };
+		6D4640CB21957D2600B051E5 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4640CA21957D2600B051E5 /* Book.swift */; };
+		6D4640CD2195877E00B051E5 /* FetchBookServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4640CC2195877E00B051E5 /* FetchBookServiceSpec.swift */; };
 		6D6BEE4F21942C4000D31022 /* ViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6BEE4E21942C4000D31022 /* ViewControllerSpec.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +45,8 @@
 		6D1E626D2192C8A8006F468A /* doubanExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = doubanExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D1E62732192C8A8006F468A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D1E627C2192D89D006F468A /* FetchBookService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchBookService.swift; sourceTree = "<group>"; };
+		6D4640CA21957D2600B051E5 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		6D4640CC2195877E00B051E5 /* FetchBookServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchBookServiceSpec.swift; sourceTree = "<group>"; };
 		6D6BEE4E21942C4000D31022 /* ViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSpec.swift; sourceTree = "<group>"; };
 		6DB9DAD294A14EC7CC7CFC87 /* Pods-doubanExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doubanExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-doubanExample/Pods-doubanExample.release.xcconfig"; sourceTree = "<group>"; };
 		8BC6F86C58BA236B6C23C9E9 /* Pods-doubanExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doubanExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-doubanExampleTests/Pods-doubanExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -101,9 +105,10 @@
 			isa = PBXGroup;
 			children = (
 				6D1E625C2192C8A6006F468A /* AppDelegate.swift */,
-				6D1E625E2192C8A6006F468A /* ViewController.swift */,
+				6D4640C921957C6900B051E5 /* Controllers */,
+				6D4640C821957C5E00B051E5 /* Views */,
+				6D4640C721957C5800B051E5 /* Model */,
 				6D1E627C2192D89D006F468A /* FetchBookService.swift */,
-				6D1E62602192C8A6006F468A /* Main.storyboard */,
 				6D1E62632192C8A8006F468A /* Assets.xcassets */,
 				6D1E62652192C8A8006F468A /* LaunchScreen.storyboard */,
 				6D1E62682192C8A8006F468A /* Info.plist */,
@@ -115,9 +120,34 @@
 			isa = PBXGroup;
 			children = (
 				6D6BEE4E21942C4000D31022 /* ViewControllerSpec.swift */,
+				6D4640CC2195877E00B051E5 /* FetchBookServiceSpec.swift */,
 				6D1E62732192C8A8006F468A /* Info.plist */,
 			);
 			path = doubanExampleTests;
+			sourceTree = "<group>";
+		};
+		6D4640C721957C5800B051E5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6D4640CA21957D2600B051E5 /* Book.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6D4640C821957C5E00B051E5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6D1E62602192C8A6006F468A /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6D4640C921957C6900B051E5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6D1E625E2192C8A6006F468A /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		A2BAD7AE81F2B30A16E849D7 /* Pods */ = {
@@ -313,6 +343,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D4640CB21957D2600B051E5 /* Book.swift in Sources */,
 				6D1E625F2192C8A6006F468A /* ViewController.swift in Sources */,
 				6D1E625D2192C8A6006F468A /* AppDelegate.swift in Sources */,
 				6D1E627D2192D89D006F468A /* FetchBookService.swift in Sources */,
@@ -324,6 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D6BEE4F21942C4000D31022 /* ViewControllerSpec.swift in Sources */,
+				6D4640CD2195877E00B051E5 /* FetchBookServiceSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

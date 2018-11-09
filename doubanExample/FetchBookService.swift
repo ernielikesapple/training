@@ -1,13 +1,15 @@
 import Alamofire
 
 class FetchBookService {
-    static let shared = FetchBookService()
-    private init() {}
+    public static let shared = FetchBookService()
+    public init() {}
 }
 
 extension FetchBookService {
-    
-    func fetchAllTaxonomy() {
-        print("111");
+    func fetchAllBooks() -> [Book] {
+        return [
+            Book(title: "A", images: ["A":"A"] , author: ["A"]),
+            Book(title: "B", images: ["B":"B"] , author: ["B"])
+        ]
     }
 }

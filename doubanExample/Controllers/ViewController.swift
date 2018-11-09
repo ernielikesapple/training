@@ -3,9 +3,12 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var helloLabel: UILabel!
     
+    var books: [Book] {
+        return FetchBookService.shared.fetchAllBooks()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        FetchBookService.shared.fetchAllTaxonomy()
         print(11122)
     }
     
