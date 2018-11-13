@@ -1,0 +1,6 @@
+framework module Pods_doubanExampleTests {
+  umbrella header "Pods-doubanExampleTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

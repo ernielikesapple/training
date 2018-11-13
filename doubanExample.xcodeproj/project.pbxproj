@@ -8,13 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		347EA29FBBE087195D0ED997 /* Pods_doubanExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E710E6E96C4B19A8A00BE96 /* Pods_doubanExample.framework */; };
+		35F29B4AD93D5D23DF7A60D4 /* Pods_doubanExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33358CDB3C65D7A8ED7AAD6F /* Pods_doubanExampleTests.framework */; };
 		6D1E625D2192C8A6006F468A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1E625C2192C8A6006F468A /* AppDelegate.swift */; };
 		6D1E625F2192C8A6006F468A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1E625E2192C8A6006F468A /* ViewController.swift */; };
 		6D1E62622192C8A6006F468A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D1E62602192C8A6006F468A /* Main.storyboard */; };
 		6D1E62642192C8A8006F468A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D1E62632192C8A8006F468A /* Assets.xcassets */; };
 		6D1E62672192C8A8006F468A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D1E62652192C8A8006F468A /* LaunchScreen.storyboard */; };
-		6D1E62722192C8A8006F468A /* doubanExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1E62712192C8A8006F468A /* doubanExampleTests.swift */; };
 		6D1E627D2192D89D006F468A /* FetchBookService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1E627C2192D89D006F468A /* FetchBookService.swift */; };
+		6D345AD52199663C00FC1B8D /* BookListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D345AD42199663C00FC1B8D /* BookListTableViewCell.swift */; };
+		6D345AD9219967C600FC1B8D /* BookSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D345AD8219967C600FC1B8D /* BookSpec.swift */; };
+		6D345ADD21996BAB00FC1B8D /* BookListTableViewCellSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D345ADC21996BAB00FC1B8D /* BookListTableViewCellSpec.swift */; };
+		6D4640CB21957D2600B051E5 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4640CA21957D2600B051E5 /* Book.swift */; };
+		6D4640CD2195877E00B051E5 /* FetchBookServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4640CC2195877E00B051E5 /* FetchBookServiceSpec.swift */; };
+		6D6BEE4F21942C4000D31022 /* ViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6BEE4E21942C4000D31022 /* ViewControllerSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,8 +34,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		33358CDB3C65D7A8ED7AAD6F /* Pods_doubanExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_doubanExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		37AF3847DD4D394130DDE93E /* Pods-doubanExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doubanExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-doubanExample/Pods-doubanExample.debug.xcconfig"; sourceTree = "<group>"; };
 		3E710E6E96C4B19A8A00BE96 /* Pods_doubanExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_doubanExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56504523DCED0CC7B8576E44 /* Pods-doubanExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doubanExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-doubanExampleTests/Pods-doubanExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		6D1E62592192C8A6006F468A /* doubanExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = doubanExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D1E625C2192C8A6006F468A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6D1E625E2192C8A6006F468A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,10 +46,16 @@
 		6D1E62662192C8A8006F468A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6D1E62682192C8A8006F468A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D1E626D2192C8A8006F468A /* doubanExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = doubanExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6D1E62712192C8A8006F468A /* doubanExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = doubanExampleTests.swift; sourceTree = "<group>"; };
 		6D1E62732192C8A8006F468A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D1E627C2192D89D006F468A /* FetchBookService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchBookService.swift; sourceTree = "<group>"; };
+		6D345AD42199663C00FC1B8D /* BookListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListTableViewCell.swift; sourceTree = "<group>"; };
+		6D345AD8219967C600FC1B8D /* BookSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSpec.swift; sourceTree = "<group>"; };
+		6D345ADC21996BAB00FC1B8D /* BookListTableViewCellSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListTableViewCellSpec.swift; sourceTree = "<group>"; };
+		6D4640CA21957D2600B051E5 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		6D4640CC2195877E00B051E5 /* FetchBookServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchBookServiceSpec.swift; sourceTree = "<group>"; };
+		6D6BEE4E21942C4000D31022 /* ViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSpec.swift; sourceTree = "<group>"; };
 		6DB9DAD294A14EC7CC7CFC87 /* Pods-doubanExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doubanExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-doubanExample/Pods-doubanExample.release.xcconfig"; sourceTree = "<group>"; };
+		8BC6F86C58BA236B6C23C9E9 /* Pods-doubanExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doubanExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-doubanExampleTests/Pods-doubanExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35F29B4AD93D5D23DF7A60D4 /* Pods_doubanExampleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				3E710E6E96C4B19A8A00BE96 /* Pods_doubanExample.framework */,
+				33358CDB3C65D7A8ED7AAD6F /* Pods_doubanExampleTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -95,9 +111,10 @@
 			isa = PBXGroup;
 			children = (
 				6D1E625C2192C8A6006F468A /* AppDelegate.swift */,
-				6D1E625E2192C8A6006F468A /* ViewController.swift */,
-				6D1E627C2192D89D006F468A /* FetchBookService.swift */,
-				6D1E62602192C8A6006F468A /* Main.storyboard */,
+				6D4640C921957C6900B051E5 /* Controllers */,
+				6D4640C821957C5E00B051E5 /* Views */,
+				6D4640C721957C5800B051E5 /* Model */,
+				6D345ADA21996A7600FC1B8D /* Service */,
 				6D1E62632192C8A8006F468A /* Assets.xcassets */,
 				6D1E62652192C8A8006F468A /* LaunchScreen.storyboard */,
 				6D1E62682192C8A8006F468A /* Info.plist */,
@@ -108,10 +125,70 @@
 		6D1E62702192C8A8006F468A /* doubanExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				6D1E62712192C8A8006F468A /* doubanExampleTests.swift */,
+				6D345AD72199675900FC1B8D /* Model */,
+				6D345AD62199674B00FC1B8D /* Controllers */,
+				6D345ADB21996A8F00FC1B8D /* Service */,
 				6D1E62732192C8A8006F468A /* Info.plist */,
 			);
 			path = doubanExampleTests;
+			sourceTree = "<group>";
+		};
+		6D345AD62199674B00FC1B8D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6D6BEE4E21942C4000D31022 /* ViewControllerSpec.swift */,
+				6D345ADC21996BAB00FC1B8D /* BookListTableViewCellSpec.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6D345AD72199675900FC1B8D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6D345AD8219967C600FC1B8D /* BookSpec.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6D345ADA21996A7600FC1B8D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				6D1E627C2192D89D006F468A /* FetchBookService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		6D345ADB21996A8F00FC1B8D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				6D4640CC2195877E00B051E5 /* FetchBookServiceSpec.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		6D4640C721957C5800B051E5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6D4640CA21957D2600B051E5 /* Book.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6D4640C821957C5E00B051E5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6D1E62602192C8A6006F468A /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6D4640C921957C6900B051E5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6D1E625E2192C8A6006F468A /* ViewController.swift */,
+				6D345AD42199663C00FC1B8D /* BookListTableViewCell.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		A2BAD7AE81F2B30A16E849D7 /* Pods */ = {
@@ -119,6 +196,8 @@
 			children = (
 				37AF3847DD4D394130DDE93E /* Pods-doubanExample.debug.xcconfig */,
 				6DB9DAD294A14EC7CC7CFC87 /* Pods-doubanExample.release.xcconfig */,
+				8BC6F86C58BA236B6C23C9E9 /* Pods-doubanExampleTests.debug.xcconfig */,
+				56504523DCED0CC7B8576E44 /* Pods-doubanExampleTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -149,9 +228,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D1E62792192C8A8006F468A /* Build configuration list for PBXNativeTarget "doubanExampleTests" */;
 			buildPhases = (
+				AB7F2FE4772AF3C483C8E04E /* [CP] Check Pods Manifest.lock */,
 				6D1E62692192C8A8006F468A /* Sources */,
 				6D1E626A2192C8A8006F468A /* Frameworks */,
 				6D1E626B2192C8A8006F468A /* Resources */,
+				A5B2A7933C609E509A5E33D4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -258,6 +339,44 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-doubanExample/Pods-doubanExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A5B2A7933C609E509A5E33D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-doubanExampleTests/Pods-doubanExampleTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-doubanExampleTests/Pods-doubanExampleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB7F2FE4772AF3C483C8E04E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-doubanExampleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -265,9 +384,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D4640CB21957D2600B051E5 /* Book.swift in Sources */,
 				6D1E625F2192C8A6006F468A /* ViewController.swift in Sources */,
 				6D1E625D2192C8A6006F468A /* AppDelegate.swift in Sources */,
 				6D1E627D2192D89D006F468A /* FetchBookService.swift in Sources */,
+				6D345AD52199663C00FC1B8D /* BookListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +396,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D1E62722192C8A8006F468A /* doubanExampleTests.swift in Sources */,
+				6D6BEE4F21942C4000D31022 /* ViewControllerSpec.swift in Sources */,
+				6D345AD9219967C600FC1B8D /* BookSpec.swift in Sources */,
+				6D4640CD2195877E00B051E5 /* FetchBookServiceSpec.swift in Sources */,
+				6D345ADD21996BAB00FC1B8D /* BookListTableViewCellSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,6 +587,7 @@
 		};
 		6D1E627A2192C8A8006F468A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BC6F86C58BA236B6C23C9E9 /* Pods-doubanExampleTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -483,6 +608,7 @@
 		};
 		6D1E627B2192C8A8006F468A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56504523DCED0CC7B8576E44 /* Pods-doubanExampleTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
