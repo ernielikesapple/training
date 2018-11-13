@@ -5,13 +5,19 @@ class ViewController: UIViewController {
     @IBOutlet weak var bookListTableView: UITableView!
     
     var books: [Book]? {
-        return FetchBookService.shared.fetchAllBooks()
+        didSet {
+            bookListTableView.reloadData()
+        }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.bookListTableView.delegate = self
         self.bookListTableView.dataSource = self
+        
+        FetchBookService.shared.fetchAllBooks(searchKeyWords: "编曲", completion: { (result) in
+            self.books =  result
+        })
     }
 }
 
